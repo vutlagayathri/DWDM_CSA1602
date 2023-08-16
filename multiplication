@@ -1,0 +1,6 @@
+a <- readline(prompt="enter first number:")
+a <- as.integer(a)
+b <- readline(prompt="enter second number:")
+b <- as.integer(b)
+multiplication=a*b
+print(paste("multiplication of two numbers is",multiplication))
