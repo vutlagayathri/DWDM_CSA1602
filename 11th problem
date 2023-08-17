@@ -1,0 +1,12 @@
+# Given age data
+age_data <- c(13, 15, 16, 16, 19, 20, 20, 21, 22, 22, 25, 25, 25, 25, 30, 33, 33, 35, 35, 35, 35, 36, 40, 45, 46, 52, 70)
+
+# Calculate roughly estimated quartiles
+q1_index <- floor(length(age_data) / 4)
+q3_index <- ceiling(length(age_data) * 3 / 4)
+q1 <- age_data[q1_index]
+q3 <- age_data[q3_index]
+
+# Print results
+cat("Roughly estimated Q1:", q1, "\n")
+cat("Roughly estimated Q3:", q3, "\n")
