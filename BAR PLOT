@@ -1,0 +1,6 @@
+# Example data
+categories <- c("A", "B", "C", "D", "E")
+values <- c(10, 25, 15, 30, 20)
+
+# Create a bar plot
+barplot(values, names.arg = categories, main = "Bar Plot Example", xlab = "Categories", ylab = "Values", col = "blue")
