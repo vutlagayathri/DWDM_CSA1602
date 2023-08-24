@@ -1,0 +1,17 @@
+# Function to perform Z-score normalization
+z_score_normalize <- function(data) {
+  mean_value <- mean(data)
+  std_dev <- sd(data)
+  normalized_data <- (data - mean_value) / std_dev
+  return(normalized_data)
+}
+
+# Example dataset
+data <- c(10, 15, 20, 25, 30, 35, 40, 45, 50, 55)
+
+# Perform Z-score normalization on the dataset
+normalized_data <- z_score_normalize(data)
+
+# Display the normalized data
+cat("Original Data:", data, "\n")
+cat("Normalized Data:", normalized_data, "\n")
