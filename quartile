@@ -1,0 +1,12 @@
+# Example dataset
+data <- c(10, 15, 20, 25, 30, 35, 40, 45, 50, 55)
+
+# Calculate quartiles using the quantile function
+q1 <- quantile(data, 0.25)
+q2 <- quantile(data, 0.5)  # Median
+q3 <- quantile(data, 0.75)
+
+# Display the quartile values
+cat("Q1:", q1, "\n")
+cat("Q2 (Median):", q2, "\n")
+cat("Q3:", q3, "\n")
