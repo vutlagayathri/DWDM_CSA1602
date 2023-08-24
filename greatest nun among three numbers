@@ -1,0 +1,14 @@
+ find_greatest <- function(a, b, c) {
+  if (a >= b && a >= c) {
+    return(a)
+  } else if (b >= a && b >= c) {
+    return(b)
+  } else {
+    return(c)
+  }
+}
+num1 <- as.numeric(readline("Enter the first number: "))
+num2 <- as.numeric(readline("Enter the second number: "))
+num3 <- as.numeric(readline("Enter the third number: "))
+greatest <- find_greatest(num1, num2, num3)
+cat("The greatest number is:", greatest, "\n")
