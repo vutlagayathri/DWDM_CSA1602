@@ -1,0 +1,16 @@
+# Function to calculate the interquartile range (IQR)
+calculate_iqr <- function(data) {
+  q1 <- quantile(data, 0.25)
+  q3 <- quantile(data, 0.75)
+  iqr <- q3 - q1
+  return(iqr)
+}
+
+# Replace this vector with your own dataset
+your_data <- c(10, 15, 20, 25, 30, 35, 40, 45, 50, 55)
+
+# Calculate the IQR of the dataset
+iqr_value <- calculate_iqr(your_data)
+
+# Display the result
+cat("Interquartile Range (IQR):", iqr_value, "\n")
