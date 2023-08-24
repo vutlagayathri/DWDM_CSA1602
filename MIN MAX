@@ -1,0 +1,9 @@
+# Sample dataset
+data <- c(10, 25, 5, 18, 30, 15, 22, 8, 40, 12)
+
+# Find minimum and maximum
+min_value <- min(data)
+max_value <- max(data)
+
+cat("Minimum:", min_value, "\n")
+cat("Maximum:", max_value, "\n")
