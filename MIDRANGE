@@ -1,0 +1,16 @@
+# Function to calculate the mid-range
+calculate_mid_range <- function(data) {
+  min_value <- min(data)
+  max_value <- max(data)
+  mid_range <- (min_value + max_value) / 2
+  return(mid_range)
+}
+
+# Example dataset
+data <- c(10, 15, 20, 25, 30, 35, 40, 45, 50, 55)
+
+# Calculate the mid-range of the dataset
+mid_range_value <- calculate_mid_range(data)
+
+# Display the mid-range value
+cat("Mid-range:", mid_range_value, "\n")
